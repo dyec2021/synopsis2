@@ -7,7 +7,7 @@ import '@aws-amplify/ui-react/styles.css';
 import awsExports from "./aws-exports";
 Amplify.configure(awsExports);
 
-const userAPI = "llmdemoapi"
+const userAPI = "https://5kjfuxsxz0.execute-api.eu-west-1.amazonaws.com/staging"
 var prompt = "Type your prompt here"
 var systemPrompt = "Type your system prompt here"
 
