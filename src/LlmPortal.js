@@ -37,7 +37,7 @@ const LlmPortal = ({ signOut, user }) => {
         }
       }
       setGettingText(true)
-      const result = API.get(userAPI,  "/?prompt=" + prompt.toString() + "&system_prompt=" + systemPrompt.toString(),requestHeaders)
+      const result = API.get(userAPI,  "/items/?prompt=" + prompt.toString() + "&system_prompt=" + systemPrompt.toString(),requestHeaders)
       .then((response) => {
           setLlmtext(response)
           setGettingText(false)
